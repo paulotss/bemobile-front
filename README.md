@@ -1,6 +1,6 @@
 # Teste Técnico Front-end Be
 
-Este teste consiste na a visualização de uma tabela com dados que virão de uma API simulada, em json-server.
+Este teste consiste na visualização de uma tabela com dados que virão de uma API simulada, em json-server.
 
 A API simulada em json-server pode ser encontrada aqui: https://github.com/BeMobile/desafio-front-end;
 
@@ -30,3 +30,5 @@ Acesse a aplicação usando a URL:
 ```
 http://localhost:5173
 ```
+
+Certifique-se que a API simulada em json-server está rodando.
