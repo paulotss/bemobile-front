@@ -18,7 +18,7 @@ Clone o repositório:
 git clone git@github.com:paulotss/bemobile-front.git
 ```
 
-Agora basta instalar as bibliotecas e executar a aplicação:
+Instale as bibliotecas e execute a aplicação:
 
 ```
 npm install
