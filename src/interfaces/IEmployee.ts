@@ -1,5 +1,5 @@
 interface IEmployee {
-  id: number
+  id: string
   name: string
   job: string
   admission_date: string
