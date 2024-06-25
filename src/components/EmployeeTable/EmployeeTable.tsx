@@ -2,13 +2,13 @@ import { useState, MouseEvent, Fragment } from 'react';
 import IEmployee from '../../interfaces/IEmployee'
 import { SlArrowDown } from "react-icons/sl";
 import { SlArrowUp } from "react-icons/sl";
-import './EmployeeGrid.css'
+import './EmployeeTable.css'
 
-interface IPropsEmployeeGrid {
+interface IPropsEmployeeTable {
   payload: IEmployee[]
 }
 
-function EmployeeGrid(props: IPropsEmployeeGrid) {
+function EmployeeTable(props: IPropsEmployeeTable) {
   const { payload } = props
   const [isActive, setIsActive] = useState<number[]>([])
 
@@ -34,7 +34,7 @@ function EmployeeGrid(props: IPropsEmployeeGrid) {
   }
 
   return (
-    <table className="employee-container">
+    <table className="employee-table">
       <thead className='employee-header'>
         <tr>
           <th className='col1'>FOTO</th>
@@ -58,6 +58,7 @@ function EmployeeGrid(props: IPropsEmployeeGrid) {
                 {
                   isActive.some(a => a === Number(employee.id))
                     ? <button
+                        type='button'
                         className='arrowButton'
                         onClick={handleClickButtonUp}
                         value={employee.id}
@@ -65,6 +66,7 @@ function EmployeeGrid(props: IPropsEmployeeGrid) {
                         <SlArrowUp />
                       </button>
                     : <button
+                        type='button'
                         className='arrowButton'
                         onClick={handleClickButtonDown}
                         value={employee.id}
@@ -111,4 +113,4 @@ function EmployeeGrid(props: IPropsEmployeeGrid) {
   )
 }
 
-export default EmployeeGrid
+export default EmployeeTable

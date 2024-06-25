@@ -1,10 +1,10 @@
 import { useState, useEffect, ChangeEvent } from 'react'
 import axios from 'axios'
 import IEmployee from './interfaces/IEmployee'
-import EmployeeGrid from './components/EmployeeGrid/EmployeeGrid'
-import './App.css'
+import EmployeeTable from './components/EmployeeTable/EmployeeTable'
 import Header from './components/Header/Header'
 import { IoSearchSharp } from 'react-icons/io5'
+import './App.css'
 
 function App() {
   const [employees, setEmployees] = useState<IEmployee[]>([])
@@ -44,7 +44,7 @@ function App() {
         </div>
       </section>
       <section className='container'>
-        <EmployeeGrid
+        <EmployeeTable
           payload={
             employees
               .filter(employee => employee.name.toLocaleLowerCase()

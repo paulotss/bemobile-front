@@ -18,7 +18,7 @@ Clone o repositório:
 git clone git@github.com:paulotss/bemobile-front.git
 ```
 
-Agora basta instalar as bibliotecas e rodar a aplicação:
+Agora basta instalar as bibliotecas e executar a aplicação:
 
 ```
 npm install
@@ -31,4 +31,4 @@ Acesse a aplicação usando a URL:
 http://localhost:5173
 ```
 
-Certifique-se que a API simulada em json-server está rodando.
+Certifique-se de que a API simulada em json-server está em execução.
