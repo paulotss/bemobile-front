@@ -12,7 +12,7 @@ A API simulada em json-server pode ser encontrada aqui: https://github.com/BeMob
 
 ## Execução
 
-Clone do repositório:
+Clone o repositório:
 
 ```
 git clone git@github.com:paulotss/bemobile-front.git
