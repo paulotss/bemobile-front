@@ -18,6 +18,12 @@ Clone o repositório:
 git clone git@github.com:paulotss/bemobile-front.git
 ```
 
+Entre na pasta do repositório clonado:
+
+```
+cd bemobile-front
+```
+
 Instale as bibliotecas e execute a aplicação:
 
 ```
