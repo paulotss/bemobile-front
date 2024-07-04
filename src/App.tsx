@@ -15,6 +15,15 @@ function App() {
     setSearch(newSearch)
   }
 
+  function searchEmployess() {
+    const result = employees.filter(employee => (
+      employee.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()) ||
+      employee.job.toLocaleLowerCase().includes(search.toLocaleLowerCase()) ||
+      employee.phone.includes(search)
+    ))
+    return result
+  }
+
   useEffect(() => {
     async function getEmployees() {
       try {
@@ -45,11 +54,7 @@ function App() {
       </section>
       <section className='container'>
         <EmployeeTable
-          payload={
-            employees
-              .filter(employee => employee.name.toLocaleLowerCase()
-                .includes(search.toLocaleLowerCase()))
-          }
+          payload={searchEmployess()}
         />
       </section>
     </>
